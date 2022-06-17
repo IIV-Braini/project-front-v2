@@ -1,0 +1,54 @@
+table {
+    border-collapse: collapse;
+    border: 1px solid grey;
+}
+
+th, td {
+    border: 2px solid grey;
+}
+
+img[class*="undelete"] {
+    display: none;
+}
+
+
+input[class*="navigations_buttons"] {
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+    border-radius: 4px;
+    background: rgb(73, 64, 199);
+    box-shadow: 0 -3px rgb(29, 45, 101) inset;
+    transition: 0.2s;
+    margin: 1px;
+    width: 35px;
+    height: 25px;
+
+}
+input[class*="navigations_buttons"]:hover {
+    background: rgb(21, 177, 204);
+}
+
+input[class*="navigations_buttons"]:active {
+    background: rgb(154, 44, 44);
+    box-shadow: 0 3px rgb(147, 33, 77) inset;
+    color: white;
+}
+
+input[class*="on_navigations_buttons"] {
+    background: rgb(154, 44, 44);
+    box-shadow: 0 3px rgb(147, 33, 77) inset;
+    color: white;
+}
+
+input[class*="on_navigations_buttons"]:hover {
+    background: rgb(154, 44, 44);
+}
+
+
+[class*=add_user] {
+    width:150px;
+    max-width:250px;
+    display: inline-block;
+    background-color: grey;
+}

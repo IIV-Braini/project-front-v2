@@ -1,0 +1,74 @@
+<html lang="en-EU">
+<head>
+    <title>RPG</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./scripts/script.js" defer></script>
+    <link href="/css/my.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../resources/favicon.ico"/>
+</head>
+<body>
+<h1>RPG admin panel</h1>
+<h3>Accounts list:</h3>
+<div>
+    <a>Count per page: </a>
+    <select id="select_value">
+        <option class=optionCount>3</option>
+        <option class=optionCount>5</option>
+        <option class=optionCount>10</option>
+        <option class=optionCount>15</option>
+    </select>
+</div>
+<table id="table">
+    <thead>
+    <tr>
+        <th>#</th>
+        <th>Name</th>
+        <th>Title</th>
+        <th>Race</th>
+        <th>Profession</th>
+        <th>Level</th>
+        <th>Birthday</th>
+        <th>Banned</th>
+        <th>Edit</th>
+        <th>Delete</th>
+    </tr>
+    </thead>
+    <tbody id="tbody_table"></tbody>
+</table>
+<div>
+    <a>Pages: </a>
+    <div id="navi_buttons"></div>
+</div>
+<h3>Create new Account list:</h3>
+<div>
+    <a class="add_user">Name: </a>
+    <input id="user_name" type="text" class="add_user">
+</div>
+<div>
+    <a class="add_user">Title: </a>
+    <input id="user_title" type="text" class="add_user">
+</div>
+<div>
+    <a class="add_user">Race: </a>
+    <select id="user_race" class="add_user"></select>
+</div>
+<div>
+    <a class="add_user">Profession: </a>
+    <select id="user_profession" class="add_user"></select>
+</div>
+
+<div>
+    <a class="add_user">Level: </a>
+    <input id="user_level" type="number" class="add_user">
+</div>
+<div>
+    <a class="add_user">Birthday: </a>
+    <input id="user_birthday" type="date" class="add_user">
+</div>
+<div>
+    <a class="add_user">Banned: </a>
+    <select id="user_banned" class="add_user"></select>
+</div>
+<input id="save_new_user" type="button" value="Save user">
+</body>
+</html>
