@@ -5,27 +5,22 @@ let optionsProfessions = []
 let optionsBanned = createOptions(data = ["false", "true"])
 
 
-$.ajax({
-    url: "my.html",
-    cache: false
-}).done(function (html) {
-    $("#results").append(html);
-})
+
 $(document).ready(function () {
-    $.get("../rest/players", function (data) {
+    $.get("/rest/players", function (data) {
         setRowsWithUsersInfo(data)
     })
 
-    $.get("../rest/players/count", function (data) {
+    $.get("/rest/players/count", function (data) {
         setNaviButtons(data)
     })
     
-    $.get("../rest/players/race", function (data) {
+    $.get("/rest/players/race", function (data) {
         setOptionsSelectMenu(createOptions(data), "race")
         optionsRaces = createOptions(data)
     })
     
-    $.get("../rest/players/profession", function (data) {
+    $.get("/rest/players/profession", function (data) {
         setOptionsSelectMenu(createOptions(data), "profession")
         optionsProfessions = createOptions(data)
     })
@@ -35,10 +30,10 @@ $(document).ready(function () {
 $('#select_value').change(function () {
     currentPage = 0
     let countPerPage = $('#select_value').val()
-    $.get("../rest/players?pageSize=" + countPerPage, function (data) {
+    $.get("/rest/players?pageSize=" + countPerPage, function (data) {
         setRowsWithUsersInfo(data)
     })
-    $.get("../rest/players/count", function (data) {
+    $.get("/rest/players/count", function (data) {
         setNaviButtons(data)
     })
 })
