@@ -5,7 +5,6 @@ let optionsProfessions = []
 let optionsBanned = createOptions(data = ["false", "true"])
 
 
-
 $(document).ready(function () {
     $.get("/rest/players", function (data) {
         setRowsWithUsersInfo(data)

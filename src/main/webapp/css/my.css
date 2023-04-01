@@ -1,4 +1,3 @@
-
 table {
     table-layout : fixed;
     width: 1000px;
@@ -34,7 +33,7 @@ th.width_2 {
 }
 
 th.width_3 {
-    width: 200px;
+    width: 180px;
     table-layout : fixed;
 }
 
@@ -46,17 +45,13 @@ td {
     padding: 8px;
 }
 
-
-
 img {
     background: transparent;
 }
 
-
 img.undelete {
     display: none;
 }
-
 
 input.navigations_buttons {
     font-weight: 600;
@@ -71,6 +66,7 @@ input.navigations_buttons {
     height: 25px;
 
 }
+
 input.navigations_buttons:hover {
     background: #b9c9fe;
 }
@@ -96,18 +92,14 @@ input {
     width: 150px;
 }
 
-input[class*="banned"] {
-    width: 60px;
-}
 
 select {
-    width: 80px;
+    width: 90px;
 }
 
-select[] {
-    width: 80px;
+select[id^="select_banned"] {
+    width: 55px;
 }
-
 
 [class*=add_user] {
     width: 150px;
